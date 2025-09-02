@@ -20,19 +20,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <h3 className="text-xl font-semibold text-primary">
           {project.title}
         </h3>
-        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-          project.status === 'completed' 
-            ? 'bg-green-100 text-green-800' 
-            : 'bg-blue-100 text-blue-800'
-        }`}>
+        <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'completed'
+          ? 'bg-green-100 text-green-800'
+          : 'bg-blue-100 text-blue-800'
+          }`}>
           {project.status === 'completed' ? 'Concluído' : 'Em andamento'}
         </span>
       </div>
-      
+
       <p className="text-text mb-4 leading-relaxed">
         {project.description}
       </p>
-      
+
       <div className="flex flex-wrap gap-2 mb-4">
         {project.technologies.map((tech, index) => (
           <span
@@ -43,13 +42,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </span>
         ))}
       </div>
-      
+
       {project.link && (
         <a
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-primary hover:text-secondary transition-colors duration-200"
+          className="inline-flex items-center px-4 py-2 border border-accent text-primary rounded-lg hover:bg-accent transition-colors duration-200"
         >
           Ver projeto
           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

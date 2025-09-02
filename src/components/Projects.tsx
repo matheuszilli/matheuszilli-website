@@ -7,26 +7,26 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title: 'Website Corporativo',
-      description: 'Site institucional responsivo desenvolvido para um estúdio de pilates.',
+      description: 'Site responsivo para estúdio de pilates com landing page otimizada e formulário de contato.',
       technologies: ['React', 'JavaScript', 'Tailwind CSS'],
       status: 'completed',
       link: 'https://www.studioserenity.com.br'
     },
     {
       id: 2,
-      title: 'Software Gestão',
-      description: 'Software de gestão para estúdio de pilates, controlando clientes, agendamentos e fluxo financeiro.',
+      title: 'Sistema de Gestão',
+      description: 'ERP para estúdio de pilates com módulos de CRM, agenda e controle financeiro.',
       technologies: ['C#', '.NET', 'Razor Pages', 'PostgreSQL'],
       status: 'in-progress'
     },
-    {
-      id: 3,
-      title: 'Sistema de Gestão de Carteira de Ação',
-      description: 'Projeto da faculdade sendo desenvolvido com foco para gestão de investimentos em ações.',
-      technologies: ['Python'],
-      link: 'https://github.com/matheuszilli/pb-financial',
-      status: 'in-progress'
-    }
+  {
+    id: 3,
+    title: 'Gestão de Carteira de Investimentos',
+    description: 'Sistema acadêmico para análise e controle de portfólio de ações.',
+    technologies: ['Python'],
+    link: 'https://github.com/matheuszilli/pb-financial',
+    status: 'in-progress'
+  }
   ];
 
   return (

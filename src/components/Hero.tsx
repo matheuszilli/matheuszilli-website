@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
         </p>
         
         <p className="text-lg text-text max-w-2xl mx-auto mb-8 leading-relaxed">
-          Trabalho no financeiro de uma empresa, desenvolvendo automações para facilitar dia a dia, com ferramentas BI.
+          Experiência em automação financeira e desenvolvimento de dashboards.
           <br />
-          Além disso, sou estudante de engenharia de software, e no tempo vago tenho como hobbie desenvolvimento de sistemas.
+          Desenvolvo projetos de software para expandir melhorar como desenvolvedor.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
