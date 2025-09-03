@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matheuszilli.com.br/sitemap.xml
