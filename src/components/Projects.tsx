@@ -19,14 +19,21 @@ const Projects: React.FC = () => {
       technologies: ['C#', '.NET', 'Razor Pages', 'PostgreSQL'],
       status: 'in-progress'
     },
-  {
-    id: 3,
-    title: 'Gestão de Carteira de Investimentos',
-    description: 'Sistema acadêmico para análise e controle de portfólio de ações.',
-    technologies: ['Python'],
-    link: 'https://github.com/matheuszilli/pb-financial',
-    status: 'in-progress'
-  }
+    {
+      id: 3,
+      title: 'Gestão de Carteira de Investimentos',
+      description: 'Sistema acadêmico para análise e controle de portfólio de ações.',
+      technologies: ['Python'],
+      link: 'https://github.com/matheuszilli/pb-financial',
+      status: 'in-progress'
+    },
+    {
+      id: 4,
+      title: 'Basilisk',
+      description: 'Sistema de gestão de uma clínica de estética. Controle de agendaa, clientes, financeiro',
+      technologies: ['Java', 'SpringBoot', 'Postgres', 'React'],
+      status: 'in-progress'
+    }
   ];
 
   return (
@@ -37,10 +44,10 @@ const Projects: React.FC = () => {
             Projetos
           </h2>
           <p className="text-lg text-secondary max-w-2xl mx-auto">
-            
+
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map(project => (
             <ProjectCard key={project.id} project={project} />

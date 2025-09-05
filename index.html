@@ -1,45 +1,78 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Site Verification - SUBSTITUA pelo código que o Google fornecer -->
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="g-VaJLs3_wfNe_1axGBeQQW3odMXQZqv-VNW18erhMw" />
-  
-  <!-- SEO Meta Tags -->
-  <title>Matheus Zilli - Estudante de Engenharia de Software | Portfolio</title>
-  <meta name="description"
-    content="Portfolio de Matheus Zilli, estudante de Engenharia de Software especializado em automação financeira e desenvolvimento full-stack. Veja meus projetos em React, TypeScript e mais." />
-  <meta name="keywords"
-    content="Matheus Zilli, desenvolvedor, engenharia de software, portfolio, React, TypeScript, JavaScript, full-stack, automação financeira, São Paulo" />
+
+  <!-- SEO Meta -->
+  <title>Matheus Zilli — Eng. de Software | Portfólio</title>
+  <meta name="description" content="Portfólio de Matheus Zilli, estudante de Engenharia de Software com foco em automação financeira e desenvolvimento full-stack (React, TypeScript). Veja projetos e contato." />
+  <!-- A tag keywords é ignorada pelo Google; pode remover se quiser -->
   <meta name="author" content="Matheus Zilli" />
+  <link rel="canonical" href="https://matheuszilli.com.br/">
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Matheus Zilli - Portfolio | Desenvolvedor Full-Stack" />
-  <meta property="og:description"
-    content="Estudante de Engenharia de Software especializado em automação financeira. Veja meus projetos e entre em contato." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Matheus Zilli — Portfólio | Eng. de Software" />
+  <meta property="og:description" content="Automação financeira e desenvolvimento full-stack. Veja meus projetos e entre em contato." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://matheuszilli.com.br" />
+  <meta property="og:url" content="https://matheuszilli.com.br/" />
+  <meta property="og:image" content="https://matheuszilli.com.br/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Matheus Zilli - Portfolio" />
-  <meta name="twitter:description" content="Estudante de Engenharia de Software e desenvolvedor full-stack" />
+  <meta name="twitter:title" content="Matheus Zilli — Portfólio" />
+  <meta name="twitter:description" content="Estudante de Engenharia de Software e dev full-stack." />
+  <meta name="twitter:image" content="https://matheuszilli.com.br/og-image.jpg" />
 
   <!-- Theme Color -->
   <meta name="theme-color" content="#111827" />
 
-  <!-- Preconnect to Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Fonts (carregamento performático) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
+  <!-- Substitua pela sua família de fontes real -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
 
+  <!-- Structured Data: WebSite + Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://matheuszilli.com.br/",
+        "name": "Portfólio — Matheus Zilli",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://matheuszilli.com.br/#pessoa" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://matheuszilli.com.br/#pessoa",
+        "name": "Matheus Zilli",
+        "url": "https://matheuszilli.com.br/",
+        "jobTitle": "Estudante de Engenharia de Software / Dev Full-Stack",
+        "knowsAbout": ["Automação Financeira", "React", "TypeScript", "Node.js"],
+        "sameAs": [
+          "https://github.com/matheuszilli", 
+          "https://www.linkedin.com/in/matheus-zilli/"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
-
 </html>
